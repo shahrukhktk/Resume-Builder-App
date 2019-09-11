@@ -71,8 +71,10 @@
                         app:cardCornerRadius="10dp">
 
                         <LinearLayout
+                            android:id="@+id/create_resume_id"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:onClick="CreateResume"
                             android:orientation="vertical"
                             android:layout_gravity="center"
                             android:gravity="center">
@@ -109,8 +111,10 @@
                         app:cardCornerRadius="10dp">
 
                         <LinearLayout
+                            android:id="@+id/resume_catalog_id"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:onClick="ResumesCatalog"
                             android:orientation="vertical"
                             android:layout_gravity="center"
                             android:gravity="center">
@@ -151,8 +155,10 @@
                         app:cardCornerRadius="10dp">
 
                         <LinearLayout
+                            android:id="@+id/your_resumes_id"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:onClick="YourResumes"
                             android:orientation="vertical"
                             android:layout_gravity="center"
                             android:gravity="center">
