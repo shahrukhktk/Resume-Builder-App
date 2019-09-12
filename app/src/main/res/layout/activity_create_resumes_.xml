@@ -13,19 +13,22 @@
         >
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_margin="10dp">
+            android:layout_margin="5dp"
+            android:layout_marginBottom="20dp">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="10dp"
                 >
 
                 <LinearLayout
+                    android:id="@+id/personal_info"
+                    android:onClick="CreateCV"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -44,7 +47,8 @@
                         android:layout_margin="5dp"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="Personal Information"
+                        android:text="Personal Info"
+                        android:textSize="10dp"
                         />
 
                 </LinearLayout>
@@ -52,13 +56,15 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="10dp"
                 >
 
                 <LinearLayout
+                    android:id="@+id/objective"
+                    android:onClick="CreateCV"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -78,6 +84,7 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:text="Career Objectives"
+                        android:textSize="10dp"
                         />
 
                 </LinearLayout>
@@ -85,13 +92,15 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="10dp"
                 >
 
                 <LinearLayout
+                    android:id="@+id/education"
+                    android:onClick="CreateCV"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -111,6 +120,7 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:text="Education"
+                        android:textSize="10dp"
                         />
 
                 </LinearLayout>
@@ -118,13 +128,15 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="10dp"
                 >
 
                 <LinearLayout
+                    android:id="@+id/skills"
+                    android:onClick="CreateCV"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -144,6 +156,7 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:text="Skills"
+                        android:textSize="10dp"
                         />
 
                 </LinearLayout>
@@ -151,13 +164,15 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="10dp"
                 >
 
                 <LinearLayout
+                    android:id="@+id/experience"
+                    android:onClick="CreateCV"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -177,6 +192,7 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:text="Experience"
+                        android:textSize="10dp"
                         />
 
                 </LinearLayout>
@@ -184,13 +200,15 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="10dp"
                 >
 
                 <LinearLayout
+                    android:id="@+id/languages"
+                    android:onClick="CreateCV"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -210,6 +228,7 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:text="Languages"
+                        android:textSize="10dp"
                         />
 
                 </LinearLayout>
@@ -217,13 +236,15 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="10dp"
                 >
 
                 <LinearLayout
+                    android:id="@+id/projects"
+                    android:onClick="CreateCV"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -243,6 +264,7 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:text="Projects"
+                        android:textSize="10dp"
                         />
 
                 </LinearLayout>
@@ -250,13 +272,15 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="10dp"
                 >
 
                 <LinearLayout
+                    android:id="@+id/achievements"
+                    android:onClick="CreateCV"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -276,6 +300,7 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:text="Achievements"
+                        android:textSize="10dp"
                         />
 
                 </LinearLayout>
@@ -283,13 +308,15 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="10dp"
                 >
 
                 <LinearLayout
+                    android:id="@+id/references"
+                    android:onClick="CreateCV"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -309,6 +336,7 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:text="References"
+                        android:textSize="10dp"
                         />
 
                 </LinearLayout>
@@ -319,20 +347,11 @@
 
     </ScrollView>
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        >
-
-        <fragment
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
-            >
-
-        </fragment>
-
-    </LinearLayout>
+        android:id="@+id/frame_container"
+        />
 
 </LinearLayout>
