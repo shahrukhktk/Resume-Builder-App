@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.desdev.resumebuilderapp.Fragments.CareerObjective_Fragment;
+import com.desdev.resumebuilderapp.Fragments.Education_fragment;
 import com.desdev.resumebuilderapp.Fragments.PersonalInfo_fragment;
 
 public class CreateResumes_Activity extends AppCompatActivity {
@@ -42,7 +43,7 @@ public class CreateResumes_Activity extends AppCompatActivity {
 
         if(view == findViewById(R.id.education))
         {
-            Fragment fragment = new PersonalInfo_fragment();
+            Fragment fragment = new Education_fragment();
             FragmentManager fm = getSupportFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();
             ft.replace(R.id.frame_container, fragment);
