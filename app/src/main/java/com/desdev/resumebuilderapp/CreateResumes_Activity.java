@@ -11,7 +11,11 @@ import android.view.View;
 
 import com.desdev.resumebuilderapp.Fragments.CareerObjective_Fragment;
 import com.desdev.resumebuilderapp.Fragments.Education_fragment;
+import com.desdev.resumebuilderapp.Fragments.Experience_fragment;
+import com.desdev.resumebuilderapp.Fragments.Language_fragment;
 import com.desdev.resumebuilderapp.Fragments.PersonalInfo_fragment;
+import com.desdev.resumebuilderapp.Fragments.Project_fragment;
+import com.desdev.resumebuilderapp.Fragments.Skills_fragment;
 
 public class CreateResumes_Activity extends AppCompatActivity {
 
@@ -52,7 +56,7 @@ public class CreateResumes_Activity extends AppCompatActivity {
 
         if(view == findViewById(R.id.skills))
         {
-            Fragment fragment = new PersonalInfo_fragment();
+            Fragment fragment = new Skills_fragment();
             FragmentManager fm = getSupportFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();
             ft.replace(R.id.frame_container, fragment);
@@ -61,7 +65,7 @@ public class CreateResumes_Activity extends AppCompatActivity {
 
         if(view == findViewById(R.id.experience))
         {
-            Fragment fragment = new PersonalInfo_fragment();
+            Fragment fragment = new Experience_fragment();
             FragmentManager fm = getSupportFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();
             ft.replace(R.id.frame_container, fragment);
@@ -70,7 +74,7 @@ public class CreateResumes_Activity extends AppCompatActivity {
 
         if(view == findViewById(R.id.languages))
         {
-            Fragment fragment = new PersonalInfo_fragment();
+            Fragment fragment = new Language_fragment();
             FragmentManager fm = getSupportFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();
             ft.replace(R.id.frame_container, fragment);
@@ -79,7 +83,7 @@ public class CreateResumes_Activity extends AppCompatActivity {
 
         if(view == findViewById(R.id.projects))
         {
-            Fragment fragment = new PersonalInfo_fragment();
+            Fragment fragment = new Project_fragment();
             FragmentManager fm = getSupportFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();
             ft.replace(R.id.frame_container, fragment);

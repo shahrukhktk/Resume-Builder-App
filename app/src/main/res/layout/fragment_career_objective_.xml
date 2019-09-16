@@ -7,20 +7,15 @@
     android:layout_margin="10dp"
     tools:context=".Fragments.CareerObjective_Fragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CAREER OBJECTIVE"
-        android:textSize="14dp"
-        android:layout_marginTop="20dp"/>
-
     <EditText
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_marginTop="20dp"
         android:maxLength="300"
+        android:textAlignment="textStart"
+        android:hint="CAREER OBJECTIVE"
         android:textSize="14dp"
-        />
+        android:gravity="start" />
 
     <Button
         android:layout_width="200dp"
